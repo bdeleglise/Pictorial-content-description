@@ -4,7 +4,7 @@ REQUEST_IMAGES_PATH = "./requete"
 
 HIST_BIN = 16
 HIST_RANGE = 256
-THRESHOLD_DIST = 1
+THRESHOLD_DIST = 2
 
 DEBUG = False
 
@@ -15,8 +15,8 @@ RESULT_CATEGORIES = {
     "requete_3.png": "tasse",
     "requete_4.png": "zebre",
     "requete_5.png": "banane",
-    "requete_6.png": "planche de surf",
-    "requete_7.png": "snowboard",
+    "requete_6.png": "planchesurf",
+    "requete_7.png": "plancheneige",
     "requete_8.png": None,
 }
 

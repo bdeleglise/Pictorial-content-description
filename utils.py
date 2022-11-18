@@ -13,12 +13,14 @@ def save_result(file, time_create_hist_ref, time, distances, top, winner, test_o
     pos = 1
     for key, value in distances.items():
         f.write(str(pos) + ";" + key + ";" + str(value) + "\n")
+        pos = pos + 1
 
     f.write("\nTop " + str(len(top)) + " :\n")
     f.write("Position;Fichier;Distance\n")
     pos = 1
     for key, value in top.items():
         f.write(str(pos) + ";" + key + ";" + str(value) + "\n")
+        pos = pos + 1
 
     if winner is None:
         winner = "Inconnu"

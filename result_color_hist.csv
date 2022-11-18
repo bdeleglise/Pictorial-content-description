@@ -2,143 +2,143 @@ Bob Algo result
 
 Requete ;requete_1.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.00945591926574707
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.007001161575317383
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;tasse_5.png;0.23167767
-1;tasse_3.png;0.28555393
-1;pomme_2.png;0.41503364
-1;banane_2.png;0.5420467
-1;planchesurf_5.png;0.653679
-1;banane_4.png;0.83889043
-1;pomme_1.png;0.89049935
-1;banane_3.png;1.0657598
-1;zebre_3.png;1.2605082
-1;pomme_3.png;1.4349706
-1;plancheneige_5.png;1.5803723
-1;tasse_4.png;1.7309583
-1;plancheneige_2.png;1.7591724
-1;planchesurf_2.png;1.8934323
-1;plancheneige_1.png;1.9984969
-1;tasse_2.png;2.0349755
-1;zebre_5.png;2.181535
-1;planchesurf_3.png;2.260714
-1;planchesurf_4.png;2.3357642
-1;plancheneige_3.png;2.447145
-1;zebre_2.png;2.5189676
-1;pomme_4.png;2.6356308
-1;plancheneige_4.png;2.6654768
-1;zebre_4.png;2.7625155
-1;zebre_1.png;2.8393865
-1;planchesurf_1.png;2.855703
-1;tasse_1.png;2.8715239
-1;banane_1.png;2.8870559
-1;banane_5.png;3.957347
-1;pomme_5.png;19.193169
+1;planchesurf_4.png;1.2991397
+2;planchesurf_1.png;1.4097571
+3;tasse_2.png;1.5061555
+4;tasse_5.png;1.5602212
+5;planchesurf_2.png;1.6011249
+6;zebre_1.png;1.62673
+7;tasse_1.png;1.6329793
+8;planchesurf_3.png;1.6391386
+9;plancheneige_1.png;1.7529874
+10;pomme_5.png;1.7847191
+11;plancheneige_3.png;1.7871529
+12;banane_4.png;1.8180933
+13;zebre_3.png;1.8245889
+14;planchesurf_5.png;1.858213
+15;pomme_3.png;1.9274032
+16;zebre_4.png;1.9515502
+17;pomme_2.png;1.9532053
+18;plancheneige_2.png;1.9705086
+19;banane_3.png;2.0098557
+20;zebre_2.png;2.0351315
+21;plancheneige_4.png;2.047411
+22;banane_2.png;2.0537107
+23;banane_1.png;2.0601432
+24;pomme_1.png;2.0627897
+25;plancheneige_5.png;2.0939991
+26;pomme_4.png;2.0951238
+27;tasse_3.png;2.1130621
+28;tasse_4.png;2.135483
+29;zebre_5.png;2.192797
+30;banane_5.png;2.2501748
 
 Top 3 :
 Position;Fichier;Distance
-1;tasse_5.png;0.23167767
-1;tasse_3.png;0.28555393
-1;pomme_2.png;0.41503364
+1;planchesurf_4.png;1.2991397
+2;planchesurf_1.png;1.4097571
+3;tasse_2.png;1.5061555
 
-Résultat obtenu ;tasse
+Résultat obtenu ;planchesurf
 Résultat attendu ;pomme
 Test OK ;False
 
 Requete ;requete_2.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.008070230484008789
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.007987260818481445
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;plancheneige_1.png;0.15140428
-1;zebre_5.png;0.31098342
-1;pomme_3.png;0.3253831
-1;planchesurf_1.png;0.53904694
-1;planchesurf_5.png;0.75748426
-1;banane_4.png;0.77160853
-1;pomme_2.png;0.8862607
-1;tasse_3.png;1.1255951
-1;banane_5.png;1.2056653
-1;tasse_5.png;1.2754643
-1;banane_2.png;1.4543498
-1;pomme_1.png;1.658525
-1;banane_3.png;1.7548081
-1;zebre_3.png;1.8750265
-1;plancheneige_5.png;2.0671816
-1;tasse_4.png;2.1529846
-1;plancheneige_2.png;2.1830244
-1;planchesurf_2.png;2.250399
-1;tasse_2.png;2.3361459
-1;planchesurf_3.png;2.468043
-1;planchesurf_4.png;2.5127897
-1;plancheneige_3.png;2.5797281
-1;zebre_2.png;2.6205988
-1;pomme_4.png;2.6911764
-1;plancheneige_4.png;2.7089188
-1;zebre_4.png;2.7656884
-1;zebre_1.png;2.8111932
-1;tasse_1.png;2.8301668
-1;banane_1.png;2.8392308
-1;pomme_5.png;10.234825
+1;tasse_5.png;1.0548205
+2;pomme_4.png;1.2431118
+3;tasse_3.png;1.4130007
+4;planchesurf_4.png;1.4202517
+5;planchesurf_3.png;1.4497911
+6;pomme_5.png;1.5435306
+7;banane_4.png;1.5956138
+8;zebre_4.png;1.6094786
+9;pomme_2.png;1.6574292
+10;tasse_1.png;1.6797696
+11;zebre_3.png;1.6847535
+12;planchesurf_1.png;1.6980253
+13;tasse_2.png;1.706666
+14;plancheneige_3.png;1.7165433
+15;zebre_1.png;1.7262781
+16;planchesurf_5.png;1.7339047
+17;planchesurf_2.png;1.7423418
+18;zebre_5.png;1.7523272
+19;plancheneige_1.png;1.7595828
+20;pomme_3.png;1.8009092
+21;plancheneige_2.png;1.8974671
+22;pomme_1.png;1.9374212
+23;banane_2.png;1.9446781
+24;zebre_2.png;1.9655827
+25;plancheneige_5.png;2.0236454
+26;banane_3.png;2.0403879
+27;plancheneige_4.png;2.0407276
+28;banane_1.png;2.13958
+29;tasse_4.png;2.1605933
+30;banane_5.png;2.2151878
 
 Top 3 :
 Position;Fichier;Distance
-1;plancheneige_1.png;0.15140428
-1;zebre_5.png;0.31098342
-1;pomme_3.png;0.3253831
+1;tasse_5.png;1.0548205
+2;pomme_4.png;1.2431118
+3;tasse_3.png;1.4130007
 
-Résultat obtenu ;plancheneige
+Résultat obtenu ;tasse
 Résultat attendu ;pomme
 Test OK ;False
 
 Requete ;requete_3.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.009007453918457031
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.008920907974243164
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;tasse_5.png;0.22616273
-1;banane_2.png;0.3086359
-1;tasse_3.png;0.38013783
-1;pomme_1.png;0.6915015
-1;pomme_2.png;0.74159104
-1;banane_3.png;0.88527966
-1;banane_4.png;0.99257505
-1;planchesurf_5.png;1.0058901
-1;zebre_3.png;1.0981098
-1;plancheneige_5.png;1.4486716
-1;tasse_4.png;1.6145883
-1;plancheneige_2.png;1.6430415
-1;planchesurf_2.png;1.7926908
-1;pomme_3.png;1.8619487
-1;tasse_2.png;1.9476827
-1;planchesurf_3.png;2.195786
-1;planchesurf_4.png;2.2781024
-1;plancheneige_3.png;2.4001675
-1;zebre_2.png;2.479312
-1;plancheneige_1.png;2.4818158
-1;pomme_4.png;2.6070783
-1;plancheneige_4.png;2.6398237
-1;zebre_5.png;2.6814575
-1;zebre_4.png;2.746463
-1;zebre_1.png;2.8308387
-1;tasse_1.png;2.8661227
-1;banane_1.png;2.8831959
-1;planchesurf_1.png;3.4242055
-1;banane_5.png;4.6306663
-1;pomme_5.png;21.351986
+1;tasse_5.png;0.95377797
+2;planchesurf_4.png;1.3057213
+3;tasse_2.png;1.495958
+4;zebre_3.png;1.55557
+5;zebre_4.png;1.5653844
+6;plancheneige_1.png;1.6173226
+7;planchesurf_5.png;1.6847079
+8;planchesurf_1.png;1.7299925
+9;tasse_1.png;1.7557864
+10;banane_4.png;1.7850689
+11;planchesurf_3.png;1.7976018
+12;zebre_1.png;1.807034
+13;banane_5.png;1.8114033
+14;pomme_4.png;1.8579118
+15;pomme_5.png;1.9007595
+16;tasse_3.png;1.9568818
+17;zebre_2.png;1.9880166
+18;pomme_3.png;1.9955788
+19;plancheneige_3.png;2.0212476
+20;tasse_4.png;2.0327506
+21;pomme_2.png;2.0578265
+22;planchesurf_2.png;2.0918791
+23;zebre_5.png;2.1502607
+24;plancheneige_2.png;2.1507177
+25;plancheneige_5.png;2.2022283
+26;banane_1.png;2.2471611
+27;pomme_1.png;2.3264112
+28;banane_2.png;2.3471243
+29;plancheneige_4.png;2.3578491
+30;banane_3.png;2.3778903
 
 Top 3 :
 Position;Fichier;Distance
-1;tasse_5.png;0.22616273
-1;banane_2.png;0.3086359
-1;tasse_3.png;0.38013783
+1;tasse_5.png;0.95377797
+2;planchesurf_4.png;1.3057213
+3;tasse_2.png;1.495958
 
 Résultat obtenu ;tasse
 Résultat attendu ;tasse
@@ -146,47 +146,47 @@ Test OK ;True
 
 Requete ;requete_4.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.021632671356201172
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.021077632904052734
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;zebre_3.png;0.3098825
-1;banane_3.png;0.49087298
-1;pomme_1.png;0.52525157
-1;plancheneige_5.png;0.63644576
-1;tasse_4.png;0.89236975
-1;plancheneige_2.png;0.9306756
-1;banane_2.png;1.1135654
-1;planchesurf_2.png;1.1651561
-1;tasse_2.png;1.4021912
-1;tasse_5.png;1.6396353
-1;planchesurf_3.png;1.783578
-1;planchesurf_4.png;1.9097569
-1;tasse_3.png;2.0919795
-1;plancheneige_3.png;2.096651
-1;zebre_2.png;2.2187514
-1;pomme_4.png;2.4141889
-1;plancheneige_4.png;2.4644036
-1;zebre_4.png;2.6283026
-1;pomme_2.png;2.7244284
-1;zebre_1.png;2.757769
-1;tasse_1.png;2.81193
-1;banane_1.png;2.8381796
-1;banane_4.png;2.9874954
-1;planchesurf_5.png;3.1349854
-1;pomme_3.png;4.445322
-1;plancheneige_1.png;5.3992753
-1;zebre_5.png;5.7029133
-1;planchesurf_1.png;6.8484755
-1;banane_5.png;8.693866
-1;pomme_5.png;34.347157
+1;planchesurf_5.png;0.85905075
+2;zebre_4.png;1.0434494
+3;zebre_2.png;1.0979716
+4;tasse_2.png;1.1622657
+5;planchesurf_1.png;1.3361609
+6;tasse_1.png;1.3412055
+7;plancheneige_1.png;1.3665675
+8;zebre_3.png;1.3916075
+9;banane_4.png;1.5152997
+10;tasse_5.png;1.5782659
+11;tasse_4.png;1.5787852
+12;planchesurf_3.png;1.6153463
+13;pomme_4.png;1.643864
+14;tasse_3.png;1.6947393
+15;plancheneige_3.png;1.6961933
+16;planchesurf_4.png;1.7875003
+17;banane_5.png;1.7932588
+18;planchesurf_2.png;1.8066643
+19;zebre_5.png;1.8127626
+20;zebre_1.png;1.8398025
+21;plancheneige_2.png;1.8835055
+22;pomme_5.png;1.8870142
+23;pomme_3.png;1.9747133
+24;plancheneige_5.png;2.0225646
+25;banane_1.png;2.0717177
+26;pomme_2.png;2.0892398
+27;plancheneige_4.png;2.1879358
+28;banane_3.png;2.2480314
+29;pomme_1.png;2.2567723
+30;banane_2.png;2.308389
 
 Top 3 :
 Position;Fichier;Distance
-1;zebre_3.png;0.3098825
-1;banane_3.png;0.49087298
-1;pomme_1.png;0.52525157
+1;planchesurf_5.png;0.85905075
+2;zebre_4.png;1.0434494
+3;zebre_2.png;1.0979716
 
 Résultat obtenu ;zebre
 Résultat attendu ;zebre
@@ -194,195 +194,195 @@ Test OK ;True
 
 Requete ;requete_5.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.008054494857788086
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.006937503814697266
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;banane_2.png;0.16378537
-1;tasse_5.png;0.43525618
-1;pomme_1.png;0.5808162
-1;tasse_3.png;0.60455966
-1;banane_3.png;0.7929922
-1;pomme_2.png;0.9789015
-1;zebre_3.png;1.0237609
-1;banane_4.png;1.1674827
-1;planchesurf_5.png;1.268693
-1;plancheneige_5.png;1.404789
-1;tasse_4.png;1.5859308
-1;plancheneige_2.png;1.614593
-1;planchesurf_2.png;1.7795448
-1;tasse_2.png;1.9478828
-1;pomme_3.png;2.198953
-1;planchesurf_3.png;2.21819
-1;planchesurf_4.png;2.307719
-1;plancheneige_3.png;2.4403875
-1;zebre_2.png;2.526804
-1;pomme_4.png;2.6655889
-1;plancheneige_4.png;2.7012124
-1;zebre_4.png;2.8173833
-1;plancheneige_1.png;2.874763
-1;zebre_1.png;2.9092083
-1;tasse_1.png;2.947617
-1;banane_1.png;2.9662197
-1;zebre_5.png;3.0908718
-1;planchesurf_1.png;3.9017282
-1;banane_5.png;5.212206
-1;pomme_5.png;23.408106
+1;planchesurf_5.png;1.4793177
+2;plancheneige_1.png;1.5729983
+3;zebre_3.png;1.5816138
+4;tasse_2.png;1.6971928
+5;zebre_4.png;1.7244672
+6;banane_5.png;1.7629309
+7;tasse_1.png;1.781834
+8;planchesurf_1.png;1.835664
+9;zebre_1.png;1.9164853
+10;tasse_5.png;1.9718013
+11;zebre_2.png;2.0188115
+12;planchesurf_2.png;2.0257177
+13;banane_4.png;2.0610852
+14;planchesurf_3.png;2.0685282
+15;planchesurf_4.png;2.10823
+16;pomme_3.png;2.129084
+17;tasse_4.png;2.1582396
+18;pomme_5.png;2.188401
+19;pomme_4.png;2.210358
+20;plancheneige_3.png;2.221447
+21;plancheneige_2.png;2.2311842
+22;tasse_3.png;2.2554297
+23;zebre_5.png;2.258842
+24;pomme_2.png;2.2614582
+25;banane_1.png;2.3280938
+26;plancheneige_5.png;2.3544571
+27;pomme_1.png;2.378415
+28;plancheneige_4.png;2.3928576
+29;banane_3.png;2.3975873
+30;banane_2.png;2.4161143
 
 Top 3 :
 Position;Fichier;Distance
-1;banane_2.png;0.16378537
-1;tasse_5.png;0.43525618
-1;pomme_1.png;0.5808162
+1;planchesurf_5.png;1.4793177
+2;plancheneige_1.png;1.5729983
+3;zebre_3.png;1.5816138
 
-Résultat obtenu ;banane
+Résultat obtenu ;planchesurf
 Résultat attendu ;banane
-Test OK ;True
+Test OK ;False
 
 Requete ;requete_6.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.013777732849121094
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.01006007194519043
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;plancheneige_5.png;0.21827
-1;tasse_4.png;0.46276015
-1;zebre_3.png;0.547353
-1;plancheneige_2.png;0.7265965
-1;planchesurf_2.png;0.8174423
-1;banane_3.png;1.0114744
-1;tasse_2.png;1.1300575
-1;pomme_1.png;1.333126
-1;planchesurf_3.png;1.6086764
-1;planchesurf_4.png;1.7714791
-1;plancheneige_3.png;2.0152745
-1;banane_2.png;2.074299
-1;zebre_2.png;2.1630576
-1;pomme_4.png;2.4203231
-1;plancheneige_4.png;2.4848511
-1;zebre_4.png;2.6908875
-1;tasse_5.png;2.7222428
-1;zebre_1.png;2.856295
-1;tasse_1.png;2.925239
-1;banane_1.png;2.9581237
-1;tasse_3.png;3.2635288
-1;pomme_2.png;4.1400037
-1;banane_4.png;4.565229
-1;planchesurf_5.png;4.6021733
-1;pomme_3.png;6.316166
-1;plancheneige_1.png;7.499832
-1;zebre_5.png;7.9212694
-1;planchesurf_1.png;9.31169
-1;banane_5.png;11.741688
-1;pomme_5.png;44.567062
+1;plancheneige_5.png;0.39718053
+2;banane_1.png;0.5772342
+3;plancheneige_3.png;1.0067511
+4;plancheneige_4.png;1.5051008
+5;plancheneige_2.png;1.5223694
+6;zebre_2.png;1.7903509
+7;tasse_4.png;1.8178728
+8;planchesurf_1.png;1.8347688
+9;banane_4.png;1.9396994
+10;planchesurf_2.png;1.9410558
+11;tasse_1.png;1.9700909
+12;pomme_5.png;2.0178921
+13;pomme_3.png;2.0427172
+14;plancheneige_1.png;2.059106
+15;planchesurf_3.png;2.0902987
+16;banane_3.png;2.10998
+17;planchesurf_5.png;2.1265113
+18;tasse_5.png;2.1317065
+19;pomme_2.png;2.1393898
+20;zebre_3.png;2.1425219
+21;zebre_5.png;2.1485708
+22;zebre_4.png;2.155976
+23;banane_2.png;2.1725862
+24;pomme_1.png;2.1761067
+25;tasse_2.png;2.1904933
+26;pomme_4.png;2.2638767
+27;planchesurf_4.png;2.2825837
+28;banane_5.png;2.2832587
+29;tasse_3.png;2.2850134
+30;zebre_1.png;2.2924094
 
 Top 3 :
 Position;Fichier;Distance
-1;plancheneige_5.png;0.21827
-1;tasse_4.png;0.46276015
-1;zebre_3.png;0.547353
+1;plancheneige_5.png;0.39718053
+2;banane_1.png;0.5772342
+3;plancheneige_3.png;1.0067511
 
 Résultat obtenu ;plancheneige
-Résultat attendu ;planche de surf
+Résultat attendu ;planchesurf
 Test OK ;False
 
 Requete ;requete_7.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.005406379699707031
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.004002571105957031
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;zebre_5.png;0.15389064
-1;plancheneige_1.png;0.25670946
-1;planchesurf_1.png;0.33173048
-1;pomme_3.png;0.57472426
-1;banane_5.png;0.8470922
-1;planchesurf_5.png;1.0146936
-1;banane_4.png;1.0586429
-1;pomme_2.png;1.1498709
-1;tasse_3.png;1.363985
-1;tasse_5.png;1.5140667
-1;banane_2.png;1.6892685
-1;pomme_1.png;1.8857918
-1;banane_3.png;1.9849751
-1;zebre_3.png;2.0944886
-1;plancheneige_5.png;2.2746387
-1;tasse_4.png;2.3596957
-1;plancheneige_2.png;2.3748949
-1;planchesurf_2.png;2.4512124
-1;tasse_2.png;2.5308926
-1;planchesurf_3.png;2.6582265
-1;planchesurf_4.png;2.7005134
-1;plancheneige_3.png;2.7632425
-1;zebre_2.png;2.8038135
-1;pomme_4.png;2.869493
-1;plancheneige_4.png;2.8863125
-1;zebre_4.png;2.9410458
-1;zebre_1.png;2.9843757
-1;tasse_1.png;3.0024934
-1;banane_1.png;3.0112553
-1;pomme_5.png;9.434549
+1;tasse_4.png;0.7793638
+2;zebre_2.png;1.713803
+3;plancheneige_3.png;1.7961535
+4;planchesurf_1.png;1.8204856
+5;tasse_2.png;1.874802
+6;plancheneige_1.png;1.8766694
+7;zebre_4.png;1.9243256
+8;tasse_1.png;1.9745712
+9;banane_4.png;1.9773064
+10;zebre_3.png;1.9797407
+11;planchesurf_5.png;1.992893
+12;tasse_5.png;1.9991617
+13;zebre_5.png;2.0031798
+14;plancheneige_5.png;2.0357008
+15;planchesurf_2.png;2.0591955
+16;plancheneige_2.png;2.065282
+17;planchesurf_3.png;2.0660105
+18;banane_1.png;2.1379054
+19;plancheneige_4.png;2.1678615
+20;pomme_5.png;2.1834679
+21;pomme_4.png;2.1999137
+22;planchesurf_4.png;2.2004542
+23;tasse_3.png;2.2070665
+24;banane_5.png;2.243172
+25;pomme_3.png;2.2562149
+26;zebre_1.png;2.2717865
+27;pomme_2.png;2.3383982
+28;banane_3.png;2.3611295
+29;pomme_1.png;2.396881
+30;banane_2.png;2.4103522
 
 Top 3 :
 Position;Fichier;Distance
-1;zebre_5.png;0.15389064
-1;plancheneige_1.png;0.25670946
-1;planchesurf_1.png;0.33173048
+1;tasse_4.png;0.7793638
+2;zebre_2.png;1.713803
+3;plancheneige_3.png;1.7961535
 
-Résultat obtenu ;zebre
-Résultat attendu ;snowboard
+Résultat obtenu ;tasse
+Résultat attendu ;plancheneige
 Test OK ;False
 
 Requete ;requete_8.png
 
-Temps de création des histogrammes de références ;1.0660169124603271
-Temps pour appliquer l'algorithme de reconnaissance d'image ;0.08225488662719727
+Temps de création des histogrammes de références ;0.9370522499084473
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.0745387077331543
 
 Résultat de la reconnaissance :
 Position;Fichier;Distance
-1;plancheneige_4.png;0.3272386
-1;pomme_4.png;0.42957178
-1;zebre_4.png;0.6827891
-1;zebre_1.png;1.3548379
-1;zebre_2.png;1.4417446
-1;tasse_1.png;1.6360598
-1;banane_1.png;1.772519
-1;plancheneige_3.png;2.0780766
-1;planchesurf_4.png;3.0466871
-1;planchesurf_3.png;3.7011805
-1;tasse_2.png;5.683576
-1;planchesurf_2.png;6.911002
-1;plancheneige_2.png;8.146707
-1;tasse_4.png;8.325119
-1;plancheneige_5.png;9.658709
-1;zebre_3.png;12.440775
-1;banane_3.png;14.118122
-1;pomme_1.png;15.688547
-1;banane_2.png;18.745638
-1;tasse_5.png;21.483833
-1;tasse_3.png;23.843151
-1;pomme_2.png;27.10513
-1;banane_4.png;28.443335
-1;planchesurf_5.png;29.255426
-1;pomme_3.png;36.04502
-1;plancheneige_1.png;41.007675
-1;zebre_5.png;42.573547
-1;planchesurf_1.png;48.542503
-1;banane_5.png;58.099564
-1;pomme_5.png;191.24788
+1;tasse_3.png;1.1872712
+2;pomme_4.png;1.1995234
+3;tasse_5.png;1.4923288
+4;planchesurf_3.png;1.5839163
+5;zebre_5.png;1.6474043
+6;planchesurf_4.png;1.7096719
+7;plancheneige_3.png;1.7567688
+8;planchesurf_1.png;1.8447282
+9;zebre_4.png;1.8749394
+10;zebre_3.png;1.911618
+11;tasse_2.png;1.9117941
+12;planchesurf_5.png;1.9501829
+13;plancheneige_1.png;1.9571129
+14;plancheneige_5.png;2.0076153
+15;tasse_1.png;2.0223856
+16;pomme_5.png;2.0360622
+17;planchesurf_2.png;2.0365887
+18;plancheneige_2.png;2.103658
+19;pomme_2.png;2.1041687
+20;zebre_1.png;2.1083667
+21;zebre_2.png;2.112456
+22;banane_4.png;2.1234143
+23;tasse_4.png;2.1705906
+24;banane_1.png;2.203114
+25;pomme_1.png;2.2047951
+26;pomme_3.png;2.231957
+27;banane_2.png;2.2460225
+28;plancheneige_4.png;2.2634907
+29;banane_3.png;2.3353472
+30;banane_5.png;2.354926
 
 Top 3 :
 Position;Fichier;Distance
-1;plancheneige_4.png;0.3272386
-1;pomme_4.png;0.42957178
-1;zebre_4.png;0.6827891
+1;tasse_3.png;1.1872712
+2;pomme_4.png;1.1995234
+3;tasse_5.png;1.4923288
 
-Résultat obtenu ;plancheneige
+Résultat obtenu ;tasse
 Résultat attendu ;Inconnu
 Test OK ;False
 
 
-Précision de l'algorithme ;0.375
+Précision de l'algorithme ;0.25

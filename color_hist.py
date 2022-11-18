@@ -28,6 +28,14 @@ def get_image_and_color_hists(file, path):
     green_hist = cv2.calcHist([image], [1], None, [HIST_BIN], [0, HIST_RANGE])
     blue_hist = cv2.calcHist([image], [2], None, [HIST_BIN], [0, HIST_RANGE])
 
+    if DEBUG:
+        color = ('r', 'g', 'b')
+        for i, col in enumerate(color):
+            histr = cv2.calcHist([image], [i], None, [HIST_BIN], [0, HIST_RANGE])
+            plt.plot(histr, color=col)
+            plt.xlim([0, HIST_BIN])
+        plt.show()
+
     return image, red_hist, green_hist, blue_hist
 
 
@@ -38,17 +46,6 @@ def create_reference_hist():
 
     for file in files:
         image, red_hist, green_hist, blue_hist = get_image_and_color_hists(file, BANQUE_IMAGES_PATH)
-
-        if DEBUG:
-            color = ('b', 'g', 'r')
-            for i, col in enumerate(color):
-                histr = cv2.calcHist([image], [i], None, [HIST_BIN], [0, HIST_RANGE])
-                plt.plot(histr, color=col)
-                plt.xlim([0, HIST_BIN])
-            plt.show()
-
-            plt.hist(image.ravel(), HIST_BIN, [0, 256])
-            plt.show()
 
         hists_image = [red_hist, green_hist, blue_hist]
         color_hists.append({
@@ -69,7 +66,7 @@ def image_recognition(color_hists_ref, time_create_hist_ref):
 
         red_hist_normalize = red_hist / np.linalg.norm(red_hist)
         green_hist_normalize = green_hist / np.linalg.norm(green_hist)
-        blue_hist_normalize = green_hist / np.linalg.norm(blue_hist)
+        blue_hist_normalize = blue_hist / np.linalg.norm(blue_hist)
 
         distances = {}
         for reference in color_hists_ref:
@@ -78,15 +75,34 @@ def image_recognition(color_hists_ref, time_create_hist_ref):
             green_hist_ref = hists_ref[1]
             blue_hist_ref = hists_ref[2]
 
-            red_hist_ref_normalize = red_hist / np.linalg.norm(red_hist_ref)
-            green_hist_ref_normalize = green_hist / np.linalg.norm(green_hist_ref)
-            blue_hist_ref_normalize = green_hist / np.linalg.norm(blue_hist_ref)
+            red_hist_ref_normalize = red_hist_ref / np.linalg.norm(red_hist_ref)
+            green_hist_ref_normalize = green_hist_ref / np.linalg.norm(green_hist_ref)
+            blue_hist_ref_normalize = blue_hist_ref / np.linalg.norm(blue_hist_ref)
 
-            dist_red = np.linalg.norm(red_hist_normalize - red_hist_ref_normalize)
-            dist_green = np.linalg.norm(green_hist_normalize - green_hist_ref_normalize)
-            dist_blue = np.linalg.norm(blue_hist_normalize - blue_hist_ref_normalize)
+            res_vect_concat = np.concatenate(
+                ((red_hist_normalize - red_hist_ref_normalize),
+                 (green_hist_normalize - green_hist_ref_normalize),
+                 (blue_hist_normalize - blue_hist_ref_normalize)),
+                axis = None
+            )
 
-            dist = dist_red + dist_green + dist_blue
+            if DEBUG:
+                print(reference['image'])
+                plt.subplot(3, 1, 1)
+                plt.plot(np.concatenate((red_hist_normalize, green_hist_normalize, blue_hist_normalize), axis = None ))
+                plt.xlim([0, HIST_BIN*3])
+                plt.subplot(3, 1, 2)
+                plt.plot(np.concatenate((red_hist_ref_normalize, green_hist_ref_normalize, blue_hist_ref_normalize), axis = None ))
+                plt.xlim([0, HIST_BIN*3])
+                plt.subplot(3, 1, 3)
+                plt.plot(res_vect_concat)
+                plt.xlim([0, HIST_BIN*3])
+
+                plt.tight_layout()
+                plt.show()
+
+            dist = np.linalg.norm(res_vect_concat)
+
             distances[reference['image']] = dist
 
         distances = dict(sorted(distances.items(), key=lambda item: item[1]))
