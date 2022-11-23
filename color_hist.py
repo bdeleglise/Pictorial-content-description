@@ -149,7 +149,8 @@ def image_recognition(color_hists_ref, time_create_hist_ref):
         end = time.time()
         exec_time = end - start
 
-        utils.save_result(file, time_create_hist_ref, exec_time, distances, top, winner, test_ok)
+        utils.save_result(file, time_create_hist_ref, exec_time, distances, top, winner, test_ok,
+                          RESULT_COLOR_HIST_FILE_PATH)
 
         if test_ok:
             test_pass = test_pass + 1

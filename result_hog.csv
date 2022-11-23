@@ -1,0 +1,388 @@
+HOG Algo result 
+
+Requete ;requete_1.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.025020122528076172
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;zebre_4.png;8.219484988420236
+2;pomme_4.png;8.486741842362347
+3;zebre_2.png;8.68647932856801
+4;tasse_1.png;8.750708674722244
+5;tasse_5.png;8.801724707786276
+6;planchesurf_3.png;8.804753769374452
+7;planchesurf_4.png;8.813840003818028
+8;plancheneige_3.png;8.82111581165245
+9;banane_1.png;8.91566893247873
+10;pomme_1.png;8.95613156022122
+11;planchesurf_1.png;9.006673620989728
+12;zebre_3.png;9.019476422556808
+13;plancheneige_2.png;9.063016071714044
+14;zebre_1.png;9.219442342253442
+15;plancheneige_5.png;9.413532051529812
+16;tasse_4.png;9.419250675512481
+17;plancheneige_4.png;9.421958513054847
+18;pomme_3.png;9.440680743373864
+19;tasse_3.png;9.52022964629758
+20;banane_2.png;9.538314152151505
+21;tasse_2.png;9.610073056104318
+22;pomme_2.png;9.613186173881024
+23;zebre_5.png;9.697960835413983
+24;banane_3.png;9.705536183206007
+25;banane_5.png;9.72377313989823
+26;pomme_5.png;9.821369572860954
+27;plancheneige_1.png;10.006071942725116
+28;planchesurf_2.png;10.362260208514789
+29;banane_4.png;10.363441159112917
+30;planchesurf_5.png;10.445937983226745
+
+Top 3 :
+Position;Fichier;Distance
+1;zebre_4.png;8.219484988420236
+2;pomme_4.png;8.486741842362347
+3;zebre_2.png;8.68647932856801
+
+Résultat obtenu ;zebre
+Résultat attendu ;pomme
+Test OK ;False
+
+Requete ;requete_2.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.029844284057617188
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;zebre_1.png;8.126302153171132
+2;pomme_4.png;8.276043166582527
+3;zebre_2.png;8.438811221729065
+4;zebre_4.png;8.462076272897386
+5;planchesurf_3.png;8.527372028444548
+6;planchesurf_1.png;8.651660601747107
+7;plancheneige_1.png;8.70611300451396
+8;zebre_3.png;8.716062062363717
+9;plancheneige_5.png;8.72891937133969
+10;plancheneige_3.png;8.731664933842492
+11;plancheneige_4.png;8.784466272715136
+12;tasse_5.png;8.937974604195889
+13;planchesurf_4.png;8.95827556629613
+14;banane_1.png;8.963017049293294
+15;plancheneige_2.png;9.126587275922383
+16;pomme_5.png;9.156142412973217
+17;pomme_2.png;9.260111801755555
+18;zebre_5.png;9.387353748685547
+19;planchesurf_5.png;9.494254980323904
+20;tasse_1.png;9.518969856211836
+21;tasse_3.png;9.759821216447625
+22;planchesurf_2.png;9.816694947484955
+23;pomme_1.png;9.834007940398381
+24;tasse_2.png;9.847870445831107
+25;pomme_3.png;10.064276489875926
+26;banane_5.png;10.072321827993122
+27;banane_2.png;10.082878437842913
+28;tasse_4.png;10.148258439326497
+29;banane_4.png;10.374311030524547
+30;banane_3.png;10.48226079312512
+
+Top 3 :
+Position;Fichier;Distance
+1;zebre_1.png;8.126302153171132
+2;pomme_4.png;8.276043166582527
+3;zebre_2.png;8.438811221729065
+
+Résultat obtenu ;zebre
+Résultat attendu ;pomme
+Test OK ;False
+
+Requete ;requete_3.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.030153274536132812
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;tasse_5.png;8.470231641761494
+2;zebre_1.png;9.050786927697347
+3;tasse_2.png;9.245885714154177
+4;tasse_3.png;9.289879399567
+5;tasse_1.png;9.306018820697961
+6;banane_1.png;9.329263799410962
+7;planchesurf_3.png;9.358238130474833
+8;zebre_2.png;9.362233460240793
+9;zebre_3.png;9.368331080398614
+10;banane_3.png;9.450998931891036
+11;pomme_1.png;9.493765491088979
+12;plancheneige_2.png;9.505788412993047
+13;zebre_4.png;9.524512338640712
+14;planchesurf_4.png;9.557423154180594
+15;planchesurf_1.png;9.60157108559159
+16;pomme_5.png;9.621116791298624
+17;pomme_3.png;9.642850069139543
+18;banane_2.png;9.691851960960072
+19;plancheneige_1.png;9.722658424875535
+20;plancheneige_3.png;9.759013141658555
+21;pomme_2.png;9.79879733575105
+22;tasse_4.png;9.810494284663596
+23;plancheneige_4.png;9.864044829982255
+24;pomme_4.png;9.93513858576231
+25;plancheneige_5.png;9.953056604122693
+26;planchesurf_2.png;10.157185853549361
+27;banane_5.png;10.201610270865622
+28;planchesurf_5.png;10.391200114106212
+29;banane_4.png;10.457684240232373
+30;zebre_5.png;10.897907925730014
+
+Top 3 :
+Position;Fichier;Distance
+1;tasse_5.png;8.470231641761494
+2;zebre_1.png;9.050786927697347
+3;tasse_2.png;9.245885714154177
+
+Résultat obtenu ;tasse
+Résultat attendu ;tasse
+Test OK ;True
+
+Requete ;requete_4.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.02965712547302246
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;planchesurf_4.png;7.929810031430918
+2;plancheneige_5.png;7.964431581490156
+3;zebre_4.png;8.05988763690253
+4;plancheneige_2.png;8.207338055533333
+5;zebre_1.png;8.279144844254404
+6;planchesurf_3.png;8.353697612854281
+7;planchesurf_1.png;8.371363982564747
+8;plancheneige_1.png;8.41740569765594
+9;zebre_2.png;8.448956378635144
+10;pomme_4.png;8.464306108036686
+11;banane_1.png;8.479117194748575
+12;plancheneige_3.png;8.531002118264345
+13;tasse_5.png;8.667622510930833
+14;zebre_3.png;8.704486448938445
+15;plancheneige_4.png;8.743669015184297
+16;tasse_2.png;8.997622625826933
+17;pomme_5.png;9.052029435977001
+18;tasse_1.png;9.17325720555573
+19;pomme_1.png;9.21632625720849
+20;pomme_2.png;9.317154491679478
+21;zebre_5.png;9.338192094531724
+22;tasse_3.png;9.508320616607225
+23;planchesurf_5.png;9.57508295835988
+24;planchesurf_2.png;9.584310929961175
+25;pomme_3.png;9.81505244040013
+26;banane_5.png;9.817259606935735
+27;banane_2.png;9.936228144620257
+28;tasse_4.png;10.113193336363523
+29;banane_3.png;10.172224668671445
+30;banane_4.png;10.243270927500749
+
+Top 3 :
+Position;Fichier;Distance
+1;planchesurf_4.png;7.929810031430918
+2;plancheneige_5.png;7.964431581490156
+3;zebre_4.png;8.05988763690253
+
+Résultat obtenu ;planchesurf
+Résultat attendu ;zebre
+Test OK ;False
+
+Requete ;requete_5.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.03146219253540039
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;planchesurf_4.png;8.533222399150317
+2;planchesurf_3.png;8.916531571260807
+3;planchesurf_1.png;9.143433506267355
+4;pomme_5.png;9.252676198046828
+5;plancheneige_5.png;9.301190804074599
+6;zebre_1.png;9.390393547178325
+7;tasse_2.png;9.437953071514313
+8;tasse_1.png;9.450216493856871
+9;plancheneige_2.png;9.505347857895764
+10;plancheneige_1.png;9.667559200389908
+11;zebre_2.png;9.770867309878144
+12;tasse_5.png;9.817004872021457
+13;planchesurf_2.png;9.931121976727825
+14;planchesurf_5.png;9.940501063340436
+15;pomme_3.png;9.960677479014604
+16;plancheneige_4.png;10.0036525209794
+17;zebre_4.png;10.035013812918589
+18;pomme_2.png;10.043916193542632
+19;banane_2.png;10.109238114182718
+20;banane_4.png;10.152864506092579
+21;zebre_3.png;10.169371833548018
+22;plancheneige_3.png;10.178128286302163
+23;tasse_3.png;10.266255891133692
+24;banane_1.png;10.272958884779088
+25;banane_3.png;10.347767425454213
+26;tasse_4.png;10.35471227940911
+27;banane_5.png;10.357249495913553
+28;pomme_1.png;10.530303450067121
+29;pomme_4.png;10.949000886224082
+30;zebre_5.png;11.102108483037421
+
+Top 3 :
+Position;Fichier;Distance
+1;planchesurf_4.png;8.533222399150317
+2;planchesurf_3.png;8.916531571260807
+3;planchesurf_1.png;9.143433506267355
+
+Résultat obtenu ;planchesurf
+Résultat attendu ;banane
+Test OK ;False
+
+Requete ;requete_6.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.028872251510620117
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;planchesurf_4.png;8.38948110000627
+2;zebre_1.png;8.452564937966061
+3;plancheneige_4.png;8.665560179036685
+4;planchesurf_3.png;8.701132194945599
+5;plancheneige_1.png;8.754598874878349
+6;planchesurf_1.png;8.777274612686316
+7;zebre_2.png;8.940088119913137
+8;banane_1.png;9.12788391059632
+9;planchesurf_2.png;9.175762298255353
+10;planchesurf_5.png;9.242839552766418
+11;plancheneige_2.png;9.262420646039601
+12;tasse_1.png;9.292210213370465
+13;zebre_3.png;9.350726630826246
+14;plancheneige_5.png;9.559751647177931
+15;tasse_5.png;9.704139005505967
+16;plancheneige_3.png;9.731531668744834
+17;pomme_2.png;9.74688897275853
+18;tasse_2.png;9.76224306396193
+19;banane_5.png;9.830002085621329
+20;banane_3.png;9.848954091493077
+21;pomme_3.png;9.860165750909399
+22;pomme_5.png;9.929384001485397
+23;zebre_4.png;9.961224898563247
+24;banane_2.png;10.006509457695884
+25;tasse_3.png;10.010833839987292
+26;pomme_1.png;10.154035567532487
+27;banane_4.png;10.180813966749644
+28;pomme_4.png;10.368808171956003
+29;tasse_4.png;10.412235777770748
+30;zebre_5.png;11.314230593668768
+
+Top 3 :
+Position;Fichier;Distance
+1;planchesurf_4.png;8.38948110000627
+2;zebre_1.png;8.452564937966061
+3;plancheneige_4.png;8.665560179036685
+
+Résultat obtenu ;planchesurf
+Résultat attendu ;planchesurf
+Test OK ;True
+
+Requete ;requete_7.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.029973745346069336
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;zebre_3.png;8.28423091623606
+2;plancheneige_3.png;8.511205913560454
+3;zebre_2.png;8.72040673445842
+4;zebre_4.png;8.80306901372484
+5;planchesurf_1.png;8.873954281219614
+6;planchesurf_4.png;8.943937608264692
+7;planchesurf_3.png;8.965525802416622
+8;plancheneige_2.png;8.978129338464026
+9;banane_1.png;8.979997463558927
+10;zebre_1.png;9.021894681788956
+11;plancheneige_4.png;9.082786869578914
+12;zebre_5.png;9.169854655195914
+13;plancheneige_5.png;9.228025205554799
+14;plancheneige_1.png;9.326319115922962
+15;planchesurf_5.png;9.481936479394815
+16;tasse_1.png;9.493890573133093
+17;pomme_5.png;9.578520759708947
+18;tasse_5.png;9.586487568149701
+19;pomme_1.png;9.626719490457802
+20;pomme_4.png;9.753867246275226
+21;pomme_2.png;9.77011800260446
+22;planchesurf_2.png;9.802003826101787
+23;banane_5.png;9.843465234282933
+24;tasse_3.png;9.849710188269777
+25;tasse_2.png;10.126171890859169
+26;tasse_4.png;10.126383347975253
+27;banane_2.png;10.142955480010233
+28;banane_3.png;10.432326336648106
+29;pomme_3.png;10.45773504081414
+30;banane_4.png;10.554325492880203
+
+Top 3 :
+Position;Fichier;Distance
+1;zebre_3.png;8.28423091623606
+2;plancheneige_3.png;8.511205913560454
+3;zebre_2.png;8.72040673445842
+
+Résultat obtenu ;zebre
+Résultat attendu ;plancheneige
+Test OK ;False
+
+Requete ;requete_8.png
+
+Temps de création des histogrammes de références ;1.3215999603271484
+Temps pour appliquer l'algorithme de reconnaissance d'image ;0.07451033592224121
+
+Résultat de la reconnaissance :
+Position;Fichier;Distance
+1;zebre_2.png;7.895629944391133
+2;zebre_1.png;7.911772274746376
+3;planchesurf_3.png;7.924253645689306
+4;planchesurf_4.png;8.159320811115323
+5;plancheneige_1.png;8.19461420571169
+6;zebre_3.png;8.381386246595262
+7;planchesurf_1.png;8.424484378661605
+8;zebre_4.png;8.440369556877208
+9;plancheneige_2.png;8.464140839306479
+10;tasse_2.png;8.692706499273086
+11;banane_1.png;8.720879670807198
+12;plancheneige_4.png;8.780442809028122
+13;pomme_4.png;8.81059280436992
+14;plancheneige_5.png;8.898542142378947
+15;tasse_5.png;8.901248927568432
+16;plancheneige_3.png;8.90595845344507
+17;planchesurf_5.png;9.038752370160115
+18;tasse_1.png;9.069933023226781
+19;planchesurf_2.png;9.278859303232462
+20;pomme_1.png;9.529992601802954
+21;pomme_2.png;9.619875927861804
+22;pomme_3.png;9.653878875809315
+23;pomme_5.png;9.656162341288065
+24;tasse_4.png;9.799062681612611
+25;tasse_3.png;9.808890007363926
+26;banane_2.png;10.023688694328351
+27;zebre_5.png;10.133528156723909
+28;banane_3.png;10.164489568168353
+29;banane_5.png;10.181876941807388
+30;banane_4.png;10.33208041686111
+
+Top 3 :
+Position;Fichier;Distance
+1;zebre_2.png;7.895629944391133
+2;zebre_1.png;7.911772274746376
+3;planchesurf_3.png;7.924253645689306
+
+Résultat obtenu ;zebre
+Résultat attendu ;Inconnu
+Test OK ;False
+
+
+Précision de l'algorithme ;0.25

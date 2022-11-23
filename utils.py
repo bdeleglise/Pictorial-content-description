@@ -1,8 +1,8 @@
-from constant import RESULT_COLOR_HIST_FILE_PATH, RESULT_CATEGORIES
+from constant import RESULT_CATEGORIES
 
 
-def save_result(file, time_create_hist_ref, time, distances, top, winner, test_ok):
-    f = open(RESULT_COLOR_HIST_FILE_PATH, "a")
+def save_result(file, time_create_hist_ref, time, distances, top, winner, test_ok, file_res):
+    f = open(file_res, "a")
     f.write( "Requete ;" + file + "\n\n")
 
     f.write( "Temps de création des histogrammes de références ;" + str(time_create_hist_ref) + "\n")
@@ -32,3 +32,4 @@ def save_result(file, time_create_hist_ref, time, distances, top, winner, test_o
     f.write("\nTest OK ;" + str(test_ok) + "\n\n")
 
     f.close()
+
