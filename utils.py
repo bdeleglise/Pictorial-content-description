@@ -1,6 +1,9 @@
 from constant import RESULT_CATEGORIES
 
 
+"""
+Allows to save the result of the recognition of an image with references into a csv file. 
+"""
 def save_result(file, time_create_hist_ref, time, distances, top, winner, test_ok, file_res):
     f = open(file_res, "a")
     f.write( "Requete ;" + file + "\n\n")

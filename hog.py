@@ -15,10 +15,18 @@ from constant import DEBUG, BANQUE_IMAGES_PATH, REQUEST_IMAGES_PATH, TOP_VOTING,
     RESULT_HOG_FILE_PATH, SOBEL_FILTER, CELL_SIZE, BLOCK_SIZE, ABS_ANGLE, WIDTH, HEIGHT
 
 
+"""
+Allows to normalize an hog block 
+Source : https://github.com/scikit-image/scikit-image/blob/fe96435877f40581d678b10fde650c6e1899354a/skimage/feature/_hog.py
+"""
 def hog_normalize_block(block, eps=1e-5):
     return block / np.sqrt(np.sum(block ** 2) + eps ** 2)
 
 
+"""
+Allows to make the convolution of an image with Sobel filter for each pixels of the image in order to get the gradient
+Source : https://lilianweng.github.io/posts/2017-10-29-object-recognition-part-1/
+"""
 def compute_gradient(image: np.ndarray):
     """
     Compute gradient of an image by rows and columns
@@ -32,6 +40,10 @@ def compute_gradient(image: np.ndarray):
     return G_x, G_y
 
 
+"""
+Allows for a cell of a block to compute the histogram of oriented gradient value
+Source : https://github.com/scikit-image/scikit-image/blob/fe96435877f40581d678b10fde650c6e1899354a/skimage/feature/_hoghistogram.pyx
+"""
 def cell_hog(magnitude,
              orientation,
              orientation_start, orientation_end,
@@ -55,11 +67,17 @@ def cell_hog(magnitude,
                     < orientation_end):
                 continue
 
+            # compute the weighting to know which proportion of the angle we need to assign to the current interval
+            # of the hist
             total += magnitude[cell_row_index, cell_column_index]
 
     return total / (cell_rows * cell_columns)
 
 
+"""
+Allows for each block of an image to compute HOGs of each cell and concatenate it
+Source : https://github.com/scikit-image/scikit-image/blob/fe96435877f40581d678b10fde650c6e1899354a/skimage/feature/_hoghistogram.pyx
+"""
 def hog_histograms(gradient_columns,
                    gradient_rows,
                    cell_columns, cell_rows,
@@ -67,8 +85,12 @@ def hog_histograms(gradient_columns,
                    number_of_cells_columns, number_of_cells_rows,
                    number_of_orientations,
                    orientation_histogram):
+
+    # Magnitude of gradient
     magnitude = np.hypot(gradient_columns,
                          gradient_rows)
+
+    # Angle of gradient
     orientation = \
         np.rad2deg(np.arctan2(gradient_rows, gradient_columns)) % (180 * ABS_ANGLE)
 
@@ -80,6 +102,8 @@ def hog_histograms(gradient_columns,
     range_rows_start = -(cell_rows / 2)
     range_columns_stop = (cell_columns + 1) / 2
     range_columns_start = -(cell_columns / 2)
+
+    # interval of bin for the histogram of each cell (20° for each bin)
     number_of_orientations_per_180 = (180. * ABS_ANGLE) / number_of_orientations
 
     for i in range(number_of_orientations):
@@ -96,6 +120,7 @@ def hog_histograms(gradient_columns,
             c = c_0
 
             while c < cr:
+                # get angle in the interval with the magnitude to indicate how we care about the information
                 orientation_histogram[r_i, c_i, i] = \
                     cell_hog(magnitude, orientation,
                              orientation_start, orientation_end,
@@ -110,6 +135,11 @@ def hog_histograms(gradient_columns,
             r += cell_rows
 
 
+"""
+Allows to get the feature vector of the Histogram Oriented Diagram of an image 
+Source : https://github.com/scikit-image/scikit-image/blob/fe96435877f40581d678b10fde650c6e1899354a/skimage/feature/_hog.py
+More readable version : https://github.com/trinhngocthuyen/teach-myself-ml/blob/master/funda_ml/HOG.ipynb
+"""
 def sobel_hog(image: np.ndarray,
               orientations=9, pixels_per_cell=(8, 8), cells_per_block=(3, 3),
               transform_sqrt=False):
@@ -117,6 +147,7 @@ def sobel_hog(image: np.ndarray,
     Compute HOG features of an image. Return a row vector
     """
 
+    # Equalisation of the image to reduce the influence of noise and illumination
     if transform_sqrt:
         image = np.sqrt(image)
 
@@ -134,6 +165,7 @@ def sobel_hog(image: np.ndarray,
     g_row = g_row.astype(float, copy=False)
     g_col = g_col.astype(float, copy=False)
 
+    # get the histogram for each bloc
     hog_histograms(g_col, g_row, c_col, c_row, s_col, s_row,
                    n_cells_col, n_cells_row,
                    orientations, orientation_histogram)
@@ -144,14 +176,20 @@ def sobel_hog(image: np.ndarray,
         (n_blocks_row, n_blocks_col, b_row, b_col, orientations)
     )
 
+    # normalize the result of each block
     for r in range(n_blocks_row):
         for c in range(n_blocks_col):
             block = orientation_histogram[r:r + b_row, c:c + b_col, :]
             normalized_blocks[r, c, :] = hog_normalize_block(block)
 
+    # return the feature vector
     return normalized_blocks.ravel()
 
 
+"""
+Computes the histogram of oriented gradient of an image with sobel or classic filter
+Source : https://towardsdatascience.com/hog-histogram-of-oriented-gradients-67ecd887675f#:%7E:text=Histogram%20of%20Oriented%20Gradients%2C%20also,the%20purpose%20of%20object%20detection
+"""
 def get_image_and_hist(file, path, im_width, im_height):
     image = cv2.imread(path + "/" + file)
 
@@ -193,28 +231,12 @@ def get_image_and_hist(file, path, im_width, im_height):
 
         plt.show()
 
-    """"# Define the Sobel operator kernels.
-    kernel_x = np.array([[-1, 0, 1], [-2, 0, 2], [-1, 0, 1]])
-    kernel_y = np.array([[1, 2, 1], [0, 0, 0], [-1, -2, -1]])
-
-    G_x = sig.convolve2d(image, kernel_x, mode='same')
-    G_y = sig.convolve2d(image, kernel_y, mode='same')
-
-    feature_vectors = []
-    for i in range(0, 128, 8):
-        for j in range(0, 64, 8):
-            ydata = get_magnitude_hist_block(i, CELL_SIZE, G_x, G_y)
-            print(ydata)
-            ydata = ydata / np.linalg.norm(ydata)
-            feature_vectors.append(ydata)
-            print(ydata)
-            return exit(1)
-    print(feature_vectors)
-    print(len(feature_vectors))"""
-
     return image, fd
 
 
+"""
+Allows to get the feature vector of HOG for the reference images
+"""
 def create_reference_hist():
     files = os.listdir(BANQUE_IMAGES_PATH)
     feature_vectors = []
@@ -229,7 +251,8 @@ def create_reference_hist():
 
     return feature_vectors
 
-
+"""
+# Source : https://github.com/SamPlvs/Object-detection-via-HOG-SVM/blob/master/testing_HOG_SVM.py
 def sliding_window(image, stepSize,
                    windowSize):  # image is the input, step size is the no.of pixels needed to skip and windowSize is the size of the actual window
     # slide a window across the image
@@ -238,8 +261,13 @@ def sliding_window(image, stepSize,
         for x in range(0, image.shape[1], stepSize):
             # yield the current window
             yield (x, y, image[y: y + windowSize[1], x:x + windowSize[0]])
+"""
 
-
+"""
+Allows for each request images to get the HOG feature vector of each color axis and to compare it 
+to feature vectors that have been found for reference images thanks to euclidian distance. 
+It will do the ranking and save the result in a file in order to get the precision of our prediction
+"""
 def image_recognition(descriptors, time_create_descritor_ref):
     files = os.listdir(REQUEST_IMAGES_PATH)
     test_pass = 0
@@ -247,19 +275,25 @@ def image_recognition(descriptors, time_create_descritor_ref):
     for file in files:
         start = time.time()
 
+        # EXPLORATION
         # image_resize = cv2.imread(REQUEST_IMAGES_PATH + "/" + file)
         # image_resize = cv2.cvtColor(image_resize, cv2.COLOR_BGR2GRAY)
         # image_resize = cv2.resize(image_resize, (200, 300))
+
         image, feature_vector = get_image_and_hist(file, REQUEST_IMAGES_PATH, WIDTH, HEIGHT)
         distances = {}
+        # For each reference we compute the euclidian distance
         for reference in descriptors:
             feature_vector_ref = reference['feature_vector']
 
             assert len(feature_vector_ref) == len(feature_vector)
 
+            # Euclidian distance
             min_dist = np.linalg.norm(feature_vector - feature_vector_ref)
 
             """
+            # EXPLORATION
+            # Source : https://github.com/SamPlvs/Object-detection-via-HOG-SVM/blob/master/testing_HOG_SVM.py
             (winW, winH) = (64, 128)
             for resized in pyramid_gaussian(image_resize, downscale=1.5):  # loop over each layer of the image that you take!
                 for (x, y, window) in sliding_window(resized, stepSize=10, windowSize=(winW, winH)):
@@ -279,14 +313,18 @@ def image_recognition(descriptors, time_create_descritor_ref):
 
             distances[reference['image']] = min_dist
 
+        # We order the result to have the best first
         distances = dict(sorted(distances.items(), key=lambda item: item[1]))
 
         if DEBUG:
             print(distances)
 
         top = {}
+        # We do the selection of the best predictions
         for i in range(0, TOP_VOTING):
             file_ref = list(distances.keys())[i]
+
+            # The prediction can be None
             if distances[file_ref] <= THRESHOLD_DIST:
                 top[file_ref] = distances[file_ref]
 
@@ -294,6 +332,8 @@ def image_recognition(descriptors, time_create_descritor_ref):
             print(top)
 
         elements = {}
+        # Thanks to the best predictions we can predict the association between the image and an object. Specify by
+        # reference images name
         for i in range(0, len(top)):
             element = list(top.keys())[i]
             pos = element.find('_')
@@ -324,6 +364,7 @@ def image_recognition(descriptors, time_create_descritor_ref):
         end = time.time()
         exec_time = end - start
 
+        # We save the result in a csv file
         utils.save_result(file, time_create_descritor_ref, exec_time, distances, top, winner, test_ok,
                           RESULT_HOG_FILE_PATH)
 

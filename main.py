@@ -7,6 +7,13 @@ import hog
 from constant import RESULT_COLOR_HIST_FILE_PATH, RESULT_HOG_FILE_PATH
 
 
+"""
+To get the pictural content of an image and associate it with a type present in banque d_images that best match :
+python main.py ALGO
+ALGO is a string that specify the algorithm to used 
+if -BOB we use the bob's algo -> the color histogram algorithm
+if -GRA11 we use our algo -> the hog algorithm
+"""
 def run():
     if len(sys.argv) != 2:
         print('Error args')
