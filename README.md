@@ -25,7 +25,7 @@ You can explore other config by personalize parameters define in constant.py fil
     - https://moodle.polymtl.ca/course/view.php?id=1396
 
 * Color Histogram Algorithm :
-    - https://www.bogotobogo.com/python/OpenCV_Python/python_opencv3_image_histogram_calcHist.php
+    - https://docs.opencv.org/3.4/d8/dbc/tutorial_histogram_calculation.html
     - http://www.cambridgeincolour.com/tutorials/histograms1.htm
     - https://medium.com/mlearning-ai/how-to-plot-color-channels-histogram-of-an-image-in-python-using-opencv-40022032e127
     - https://www.bogotobogo.com/python/OpenCV_Python/python_opencv3_image_histogram_calcHist.php
